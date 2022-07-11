@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drag & Drop | Проект 2</title>
+  </head>
+  <body>
+    <button onclick="onClickFunction()">Добавить задачу</button>
+    <div>
+      <div class="row">
+          <div class="col-header start">Начать</div>
+          <div class="col-header progress">В процессе</div>
+          <div class="col-header done">Готово</div>
+      </div>
+
+      <div class="row">
+        <div class="placeholder starting">
+          <div class="item" draggable="true">Перетащи меня</div>
+          <div class="item" draggable="true">Перетащи меня2</div>
+        </div>
+        <div class="placeholder inProgress"></div>
+        <div class="placeholder ended"></div>
+      </div>
+    <div class="cycleBin hide">Move to trash</div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #dad6d6;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 5px;
+  padding: 0.8rem 1rem;
+  color: rgba(0, 0, 0, 0.788);
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.603);
+}
+
+.item {
+  width: 150px;
+  height: 66px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 5px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #000000;
+  text-align: center;
+  cursor: grab;
+  border: 2px solid rgba(0, 0, 0, 0.356);
+  padding-top: 10px;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 150px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+
+}
+
+.start {
+  background: linear-gradient(90deg, #e20f0fc2 0%, #f3f3f3 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #f5bf10 0%, #f8f5e5 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #058105 0%, #c1f3bd 100%);
+}
+
+.hold {
+  border: 5px solid #c26005;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  /* padding-bottom: 20px; */
+  border-top: 2px solid #c26005;
+}
+
+.starting .item {
+  background-color: rgba(255, 0, 0, 0.363)
+}
+
+.inProgress .item {
+  background-color: yellow;
+}
+
+.ended .item {
+  background-color: green;
+}
+
+button {
+  background-color: #4caf50;
+  border-style: None;
+  border-width: 0px;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 50px;
+  margin-right: 5px;
+
+}
+
+button:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+.cycleBin {
+  border: 1px solid black;
+  height: 50px;
+  text-align: center;
+  transition: 0,3 ms ease-in-out;
+}
